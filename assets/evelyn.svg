@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="267.5" height="111" viewBox="0 0 267.5 111">
-  <g id="Component_3_1" data-name="Component 3 – 1" transform="translate(1 1)">
-    <g id="Group_2" data-name="Group 2" transform="translate(-77.5 43.5)">
-      <text id="Evelyn" transform="translate(77.5 44.5)" fill="#02a5cf" stroke="#02a5cf" stroke-width="1" font-size="82" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Evelyn</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" width="243" height="97" viewBox="0 0 243 97">
+  <g id="Component_2_1" data-name="Component 2 – 1" transform="translate(1 1)">
+    <g id="Component_1_1" data-name="Component 1 – 1">
+      <text id="E" transform="translate(0 77)" fill="#9d2b00" stroke="#9d2b00" stroke-width="1" font-size="71" font-family="YuGothicUI-Regular, Yu Gothic UI"><tspan x="0" y="0">E</tspan></text>
+      <text id="EVELYN" transform="translate(41 77)" fill="#9d2b00" stroke="#9d2b00" stroke-width="1" font-size="71" font-family="YuGothicUI-Regular, Yu Gothic UI"><tspan x="0" y="0">evelyn</tspan></text>
     </g>
-    <text id="technology" transform="translate(167.5 104.5)" fill="#0a0a0a" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">technology</tspan></text>
   </g>
 </svg>
