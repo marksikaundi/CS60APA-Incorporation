@@ -1,3 +1,0 @@
-encrycode
-authdrive
-paste drive
