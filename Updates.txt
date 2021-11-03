@@ -1,4 +1,30 @@
-The following Sections are updated:
-About✔
-Terms✔
-Donate✔
+# ABOUT DATA UPGRADE AND MAINTANANCE #
+AUTHOR:  Mark sikaundi
+EMAIL:   cs6oapa@gmail.com
+WEBSITE: www.marksikaundi.me
+GPS:     Lusaka, Zambia
+
+=================================
+           VERSIONS
+    initial: Release 
+    final:   Release
+
+            SITE DEBUGING
+The site and all related pratform will be maintained every month to improve site peformance and security
+=================================
+contents found in the site
+
+1.Home
+2.About
+3.Signup
+4.Loging
+5.Terms
+6.Donate
+7.Categories
+8.Download
+10.Copyrights
+
+        ==================================
+                Alright reserved  ©2021
+        ==================================
+Designed and maintained By the Team computer science 60 Advanced Research Project Africa(CS60APA)
