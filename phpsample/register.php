@@ -1,9 +1,46 @@
+<?php
+session_start();
+
+    include("connection.php");
+    include("function.php");
+
+
+    if($_SERVER['REQUEST_METHOD'] == "POST")
+    {
+       //SOMETHING WAS POSTED 
+       $firstname = $_POST['firstname'];
+       $lastname = $_POST['lastname'];
+       $study = $_POST['study'];
+       $password = $_POST['password'];
+
+       if(!empty($firstname) && !empty($lastname) && !empty($study) && !empty($password) && !is_numeric($firstname))
+       {
+
+        //save to db
+        $user_id = random_num(20);
+        $query = "insert into users (user_id,firstname,lastname,study,password) values ('$user_id','$firstname','$lastname','$study','$password')";
+
+
+        mysqli_query($con, $query);
+
+        header("Location: login.php");
+        die;
+       }else
+       {
+           echo "please provide valid information";
+       }
+    }
+
+
+
+?>
+
 <!Doctype html>
 <html>
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login Form with Avatar</title>
+    <title>CS60APA Registration-Form</title>
     <!--<link rel="stylesheet" href="style.css">-->
 </head>
 <style>
@@ -88,39 +125,12 @@
 </style>
 
 <body>
-    <form action="home.php" method="POST">
-        <!--php codes-->
-        <?php
-		if (isset($_POST['submit'])) {
-			$conn=mysqli_connect('localhost','root','','mk');
-			if (!$conn) {  
-				echo mysqli_error();
-			}
-			$name=$_POST['firstname'];
-			$number=$_POST['lastname'];
-            $number=$_POST['number'];
-            $department=$_POST['department'];
-	
-			$query="INSERT INTO `student` VALUES ('','$firstname','$lastname','$number','$department')";
-			if ($query_run=mysqli_query($conn,$query)) {
-				echo "Registration sucess";
-			}
-			else
-			{
-				echo "Sorry Try again";
-			}
-		}
-		else
-		{
-			echo "All field are required";
-		}
-		?>
-        <!--end of php codes-->
+    <form action="" method="POST">
         <div class="form-container">
 
             <div class="img-container">
 
-                <img src="../class/avatar.png" alt="avatar">
+                <img src="avatar.png" alt="avatar">
 
             </div>
 
@@ -130,8 +140,8 @@
             <label for="username">LastName</label>
             <input type="text" name="lastname" placeholder="Enter LastName" class="form-text" required>
 
-            <label for="username">Student ID</label>
-            <input type="text" name="number" placeholder="Enter your Student id" class="form-text" required>
+            <label for="study">Study</label>
+            <input type="text" name="study" placeholder="Enter your Study Area" class="form-text" required>
 
             <label for="password">Password</label>
             <input type="password" name="password" placeholder="Enter Password" class="form-text">
@@ -142,7 +152,7 @@
 
         <div class="form-container background">
 
-            <span class="forget">Forget <a href="#">password?</a></span>
+            <span class="forget">Login <a href="#">Login</a></span>
 
         </div>
 
